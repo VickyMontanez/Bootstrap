@@ -52,9 +52,16 @@ h1{
     #copy p{
         width: 100%;
     }
+    #footer{
+        width: 100%;
+    }
+
 }
 @media (max-width: 360px) {
     #copy p{
+        width: 100%;
+    }
+    #footer{
         width: 100%;
     }
 }
