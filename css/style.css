@@ -14,6 +14,11 @@
 
 body{
     background-color: #FAEAB1;
+    height: 900px;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
 }
 
 #nav1{
@@ -29,6 +34,7 @@ body{
 
 h1{
     font-family: "Signature";
+    margin-bottom:20px;
 
 }
 
@@ -42,13 +48,32 @@ h1{
     background-color: #FFB84C;
     border-radius: 10px;
 }
-@media (max-width: 367px) {
-    #descripcion{
-        width: 100px;
-        height: 480px ;
-        overflow: scroll;
+@media (min-width: 750px) {
+    #copy p{
+        width: 100%;
     }
 }
+@media (max-width: 360px) {
+    #copy p{
+        width: 100%;
+    }
+}
+@media (max-width: 810px) {
+    #descripcion{
+        width: 417px;
+        height: 970px ;
+        overflow: hidden;}
+    
+}
+
+@media (max-width: 367px) {
+        #descripcion{
+            width: 100px;
+            height: 480px ;
+            overflow: hidden;
+        }
+}
+
 @media (max-width: 449px) {
     .navbar-brand{
         font-family: "Signature";
@@ -56,16 +81,40 @@ h1{
         padding-left: 20px;
         letter-spacing: 10px;
     }
+    body{
+        height: 883px;
+    }
 }
 img{
     border-radius: 10px;
 }
 .grupo1{
-    display: absolute;
-    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    z-index: 2;
+    position: absolute;
+    width: 4rem;
+    bottom: 27rem;
+    background-color: #FDEEDC;
+    text-align: center;
+    border-radius: 10px;
+    right: 20px;
+    top: 12rem;
+    height: 17rem;
 }
 
-
+#dosRedes{
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    position:relative;
+}
+i{
+    font-size: 50px;
+    padding: 10px;
+    color:#C55300;
+}
 p{
     font-family: "hand";
     font-size: 18px;
