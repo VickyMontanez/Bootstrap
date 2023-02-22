@@ -1,9 +1,90 @@
-.navbar{
-    padding: 10px;
+@font-face {
+    font-family:"Signature" ;
+    src: url(../fonts/SimpleSass-Regular.ttf);
+}
+@font-face {
+    font-family:"hand" ;
+    src: url(../fonts/simpletix.otf);
 }
 
-.copy{
-    padding: 5px 2px;
-    text-align: center;
-    color:black;
+.container-fluid, ::after, ::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body{
+    background-color: #FAEAB1;
+}
+
+#nav1{
+    background-color: #E5BA73;
+}
+
+.navbar-brand{
+    font-family: "Signature";
+    font-size: 45px;
+    padding-left: 30px;
+
+}
+
+h1{
+    font-family: "Signature";
+
+}
+
+.nav-link{
+    font-family: "hand";
+    letter-spacing: 5px;
+    margin: 10px;
+}
+
+.nav-link:hover{
+    background-color: #FFB84C;
+    border-radius: 10px;
+}
+@media (max-width: 367px) {
+    #descripcion{
+        width: 100px;
+        height: 480px ;
+        overflow: scroll;
+    }
+}
+@media (max-width: 449px) {
+    .navbar-brand{
+        font-family: "Signature";
+        font-size: 30px;
+        padding-left: 20px;
+        letter-spacing: 10px;
+    }
+}
+img{
+    border-radius: 10px;
+}
+.grupo1{
+    display: absolute;
+    top:0;
+}
+
+
+p{
+    font-family: "hand";
+    font-size: 18px;
+}
+
+button{
+    font-family: "hand";
+    width: 150px;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #C58940;
+}
+
+#copy{
+    position:absolute; 
+    bottom:0;
+    background-color: #C58940;
 }
